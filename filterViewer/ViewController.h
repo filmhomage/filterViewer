@@ -22,7 +22,7 @@ UIImagePickerControllerDelegate>
     UIImage*        _imageResizeForFilter;
     
     BOOL            _bImagePickerShowOnce;
-    int             _nSelectedFilterNumber;
+    NSInteger       _nSelectedFilterNumber;
 }
 
 @property(nonatomic, retain)UIScrollView* scrollView;
@@ -31,6 +31,6 @@ UIImagePickerControllerDelegate>
 @property(nonatomic, retain)UIImage* imageOriginal;
 @property(nonatomic, retain)UIImage* imageResizeForFilter;
 @property(nonatomic, retain)UIToolbar* toolbar;
-@property (nonatomic,retain) NSDictionary* metadataDict;
+@property(nonatomic, retain)NSDictionary* metadataDict;
 
 @end

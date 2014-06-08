@@ -116,7 +116,7 @@
 {
     // Apply to filter Original Image
     {
-        NSString* name = [NSString stringWithFormat:@"filter%.2d:", _nSelectedFilterNumber];
+        NSString* name = [NSString stringWithFormat:@"filter%.2ld:", (long)_nSelectedFilterNumber];
         SEL sel = NSSelectorFromString(name);
         if([self respondsToSelector:sel])
         {
@@ -261,7 +261,7 @@
     {
         _nSelectedFilterNumber = sender.tag;
         
-        NSString* name = [NSString stringWithFormat:@"filter%.2d:", sender.tag];
+        NSString* name = [NSString stringWithFormat:@"filter%.2ld:", (long)sender.tag];
         SEL sel = NSSelectorFromString(name);
         if([self respondsToSelector:sel])
         {
