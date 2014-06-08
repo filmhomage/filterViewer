@@ -13,6 +13,11 @@
 		B9ECC82E1944B15F00D39736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9ECC82C1944B15F00D39736 /* Main.storyboard */; };
 		B9ECC8301944B15F00D39736 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9ECC82F1944B15F00D39736 /* Images.xcassets */; };
 		B9ECC83C1944B15F00D39736 /* filterViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECC83B1944B15F00D39736 /* filterViewerTests.m */; };
+		B9ECC8481944B1FB00D39736 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B9ECC8471944B1FB00D39736 /* Utilities.m */; };
+		B9ECC84C1944B24E00D39736 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ECC84B1944B24D00D39736 /* CoreImage.framework */; };
+		B9ECC84E1944B25200D39736 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ECC84D1944B25200D39736 /* CoreGraphics.framework */; };
+		B9ECC8501944B25600D39736 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ECC84F1944B25600D39736 /* UIKit.framework */; };
+		B9ECC8521944B25B00D39736 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ECC8511944B25B00D39736 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,14 @@
 		B9ECC8351944B15F00D39736 /* filterViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = filterViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9ECC83A1944B15F00D39736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9ECC83B1944B15F00D39736 /* filterViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = filterViewerTests.m; sourceTree = "<group>"; };
+		B9ECC8451944B18F00D39736 /* Contants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contants.h; sourceTree = "<group>"; };
+		B9ECC8461944B1D100D39736 /* Utilites.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilites.h; sourceTree = "<group>"; };
+		B9ECC8471944B1FB00D39736 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		B9ECC8491944B24400D39736 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B9ECC84B1944B24D00D39736 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B9ECC84D1944B25200D39736 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9ECC84F1944B25600D39736 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9ECC8511944B25B00D39736 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9ECC8521944B25B00D39736 /* Foundation.framework in Frameworks */,
+				B9ECC8501944B25600D39736 /* UIKit.framework in Frameworks */,
+				B9ECC84E1944B25200D39736 /* CoreGraphics.framework in Frameworks */,
+				B9ECC84C1944B24E00D39736 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				B9ECC8211944B15F00D39736 /* filterViewer */,
+				B9ECC8531944B28F00D39736 /* Frameworks */,
 				B9ECC8381944B15F00D39736 /* filterViewerTests */,
 				B9ECC8201944B15F00D39736 /* Products */,
 			);
@@ -81,8 +99,11 @@
 			children = (
 				B9ECC8261944B15F00D39736 /* AppDelegate.h */,
 				B9ECC8271944B15F00D39736 /* AppDelegate.m */,
+				B9ECC8451944B18F00D39736 /* Contants.h */,
 				B9ECC8291944B15F00D39736 /* ViewController.h */,
 				B9ECC82A1944B15F00D39736 /* ViewController.m */,
+				B9ECC8461944B1D100D39736 /* Utilites.h */,
+				B9ECC8471944B1FB00D39736 /* Utilities.m */,
 				B9ECC82C1944B15F00D39736 /* Main.storyboard */,
 				B9ECC82F1944B15F00D39736 /* Images.xcassets */,
 				B9ECC8221944B15F00D39736 /* Supporting Files */,
@@ -114,6 +135,18 @@
 				B9ECC83A1944B15F00D39736 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9ECC8531944B28F00D39736 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9ECC8511944B25B00D39736 /* Foundation.framework */,
+				B9ECC84F1944B25600D39736 /* UIKit.framework */,
+				B9ECC84D1944B25200D39736 /* CoreGraphics.framework */,
+				B9ECC84B1944B24D00D39736 /* CoreImage.framework */,
+				B9ECC8491944B24400D39736 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +250,7 @@
 			files = (
 				B9ECC82B1944B15F00D39736 /* ViewController.m in Sources */,
 				B9ECC8281944B15F00D39736 /* AppDelegate.m in Sources */,
+				B9ECC8481944B1FB00D39736 /* Utilities.m in Sources */,
 				B9ECC8251944B15F00D39736 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +292,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -300,7 +334,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
